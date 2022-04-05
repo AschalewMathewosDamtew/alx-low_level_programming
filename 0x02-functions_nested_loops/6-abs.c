@@ -1,29 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _abs - value absolute
+ * _abs - to get the abs of number n
  *
- *@n: The int to print
- * Return: Always 0.
+ * @n: any number as n
+ * Return: -n if n < 0, n if n >=0
  */
-
 int _abs(int n)
 {
-
-if (n < 0)
-{
-return (n * (-1));
+	if (n < 0)
+	{
+		n = -n;
+		return (n);
+	}
+	return (n);
 }
 
-else if (n == 0)
-{
-return (0);
-}
-
-else
-{
-return (n);
-}
-
-}

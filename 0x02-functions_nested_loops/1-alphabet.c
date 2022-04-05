@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet lowercase
+ * print_alphabet - print all lowercase letters
  *
- * Return: Always 0.
+ * Return: null.
  */
 
 void print_alphabet(void)
 {
-char alphabet;
+	int stop = 122, count = 97;
 
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-_putchar(alphabet);
+	while (count <= stop)
+	{
+		_putchar(count);
+		count++;
+	}
+	_putchar('\n');
 }
 
-_putchar('\n');
-
-}
